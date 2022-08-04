@@ -1,0 +1,305 @@
+/:
+  controller: Main
+  action: home
+  role: 
+    - none
+
+/contact:
+  controller: Main
+  action: contact
+  role: 
+    - none
+
+/login:
+  controller: user
+  action: login
+  role: 
+    - none
+
+/logout:
+  controller: user
+  action: logout
+  role: 
+    - none
+
+/register:
+  controller: user
+  action: register
+  role: 
+    - none
+
+/activation:
+  controller: user
+  action: activation
+  role: 
+    - none
+
+/forget:
+  controller: user
+  action: pwdforget
+  role: 
+    - none
+
+/newpage:
+  controller: page
+  action: newpage
+  role: 
+    - none
+
+/readpage:
+  controller: page
+  action: readpage
+  role: 
+    - none
+
+/deletepage:
+  controller: page
+  action: deletepage
+  role: 
+    - none
+
+
+/editpage:
+  controller: page
+  action: editpage
+  role: 
+    - none
+
+/list:
+  controller: page
+  action: displayAllPages
+  role:
+    - admin
+
+/reset-pwd:
+  controller: user
+  action: resetpassword
+  role: 
+    - none
+
+/profile:
+  controller: user
+  action: showprofile
+  role:
+    - user
+    - editor
+    - admin
+
+/profile-editpassword:
+  controller: user
+  action: editpasswordprofile
+  role:
+    - none
+
+/mail:
+  controller: user
+  action: sendmail
+  role: 
+    - none
+
+/dashboard:
+  controller: admin
+  action: dashboard
+  role:
+    - admin
+
+/users:
+  controller: user
+  action: users
+  role:
+    - admin
+
+/user-remove:
+  controller: user
+  action: removeUser
+  role:
+    - admin
+
+/user:
+  controller: user
+  action: showUser
+  role:
+    - admin
+
+/user-edit:
+  controller: user
+  action: editUser
+  role:
+    - admin
+
+/comments:
+  controller: comment
+  action: comments
+  role:
+    - admin
+
+/comment-remove:
+  controller: comment
+  action: removeComment
+  role:
+    - admin
+
+/comment-add:
+  controller: comment
+  action: addComment
+  role:
+    - user
+    - admin
+
+/comment-activate:
+  controller: comment
+  action: activateComment
+  role:
+    - admin
+
+/comment-report:
+  controller: comment
+  action: reportComment
+  role:
+    - none
+
+/testcommentpage:
+  controller: main
+  action: samplepage
+  role:
+    - none
+
+/products:
+  controller: product
+  action: products
+  role:
+    - admin
+
+/product-register:
+  controller: product
+  action: registerProduct
+  role:
+    - admin
+
+/product:
+  controller: product
+  action: showProduct
+  role:
+    - admin
+
+/product-remove:
+  controller: product
+  action: removeProduct
+  role:
+    - admin
+
+/categories:
+  controller: category
+  action: categories
+  role:
+    - admin
+
+/category-register:
+  controller: category
+  action: registerCategory
+  role:
+    - admin
+
+/category:
+  controller: category
+  action: showCategory
+  role:
+    - admin
+
+/category-remove:
+  controller: category
+  action: removeCategory
+  role:
+    - admin
+
+/pageProduct:
+  controller: product
+  action: showPageProduct
+  role:
+    - none
+
+/addToCart:
+  controller: product
+  action: AddToCart
+  role:
+   - none
+
+/emptyCart:
+  controller: product
+  action: EmptyCart
+  role:
+   - none
+
+/shoppingCart:
+  controller: product
+  action: showCart
+  role:
+   - none
+
+/checkout:
+  controller: checkout
+  action: generateCheckout
+  role:
+    - user
+    - admin
+
+/checkouts:
+  controller: checkout
+  action: showAllCheckout
+  role:
+    - admin
+
+/installer:
+  controller: installer
+  action: initproject
+  role:
+    - none
+    
+/showallproducts:
+  controller: front
+  action: showAllProduct
+  role:
+    - none
+
+/templates:
+  controller: template
+  action: templates
+  role:
+    - admin
+
+/template-register:
+  controller: template
+  action: registerTemplate
+  role:
+    - admin
+
+/template:
+  controller: template
+  action: showTemplate
+  role:
+    - admin
+
+/template-remove:
+  controller: template
+  action: removeTemplate
+  role:
+    - admin
+
+/template-update:
+  controller: template
+  action: updateTemplate
+  role:
+    -admin
+  
+/catalogue:
+  controller: front
+  action: showCategories
+  role:
+    - none
+
+/category:
+  controller: front
+  action: showProductsByCategory
+  role:
+    - none
+
